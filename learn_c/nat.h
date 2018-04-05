@@ -17,7 +17,7 @@
 		a = b; 				\
 		b = temp; 			\
 	})
-#define swap_nat SWAP
+#define nat_swap SWAP
 
 #define MAX(a, b) 				\
 	({ 					\
@@ -25,7 +25,7 @@
 		__typeof__(b) _b = (b); 	\
 		_a > _b ? _a : _b; 		\
 	})
-#define max_nat MAX
+#define nat_max MAX
 
 #define MIN(a, b)				\
 	({					\
@@ -33,7 +33,7 @@
 		__typeof__(b) _b = (b); 	\
 		_a < _b ? _a : _b;		\
 	})
-#define min_nat MIN
+#define nat_min MIN
 //
 
 #endif
