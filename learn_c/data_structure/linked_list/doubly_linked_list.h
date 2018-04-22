@@ -10,7 +10,7 @@ struct list_head {
 #define LIST_HEAD_INIT(name) { &(name), &(name) }
 
 #define LIST_HEAD(name)	\
-		struct list_head name = LIST_HEAD_INIT(name)
+	struct list_head name = LIST_HEAD_INIT(name)
 		
 static inline void INIT_LIST_HEAD(struct list_head *list)
 {
@@ -97,18 +97,18 @@ static inline int list_empty(const struct list_head *head)
  * list_entry - get the struct for this entry.
  */
 #define list_entry(ptr, type, member)	\
-		container_of(ptr, type, member)
+	container_of(ptr, type, member)
 
 /*
  * list_for_each - iterate over a list.
  */
 #define list_for_each(pos, head)	\
-		for (pos = (head)->next; pos != (head); pos = pos->next)
+	for (pos = (head)->next; pos != (head); pos = pos->next)
 
 /*
  * list_next_entry - get the next element in list.
  */
 #define list_next_entry(pos, member)	\
-		list_entry((pos)->member.next, typeof(*(pos)), member)
+	list_entry((pos)->member.next, typeof(*(pos)), member)
 
 #endif
