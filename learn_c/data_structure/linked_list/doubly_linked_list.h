@@ -4,7 +4,7 @@
 #include "nat_utility.h"
 
 struct list_head {
-	struct list_node *next, *prev;
+	struct list_head *next, *prev;
 };
 
 #define LIST_HEAD_INIT(name) { &(name), &(name) }
