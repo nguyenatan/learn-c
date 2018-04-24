@@ -30,7 +30,7 @@ int main(void)
 	list_for_each(pos, &myList.list) {
 		entry = list_entry(pos, struct animal_list, list);
 		
-		printf("%s\n", entry->name);
+		printf(pos->next != &myList.list ? "%s " : "%s\n", entry->name);
 	}
 	
 	printf("\n");
@@ -39,7 +39,7 @@ int main(void)
 	list_for_each(pos, &myList.list) {
 		entry = list_entry(pos, struct animal_list, list);
 		
-		printf("%s\n", entry->name);
+		printf(pos->next != &myList.list ? "%s " : "%s\n", entry->name);
 	}
 	
 	return 0;
