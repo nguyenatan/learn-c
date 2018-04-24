@@ -3,7 +3,7 @@
 #include "doubly_linked_list.h"
 
 struct animal_list {
-	char *name[20];
+	char name[20];
 	struct list_head list;
 };
 
