@@ -2,7 +2,7 @@
 
 #define bool int
 
-bool is_opposite_sign(size_t x, size_t y)
+bool is_opposite_sign(unsigned int x, unsigned int y)
 {	
 	return (x ^ y) >> 31;
 }
