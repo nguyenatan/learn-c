@@ -1,6 +1,6 @@
 #include <stdio.h>
     
-void swap(unsigned int *x, unsigned int *y)
+void swap(unsigned *x, unsigned *y)
 {
 	if (*x != *y) {
 		*x ^= *y;
