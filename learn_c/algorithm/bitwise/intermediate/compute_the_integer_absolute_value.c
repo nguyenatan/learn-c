@@ -2,11 +2,11 @@
 
 #define CHAR_BIT 8
 
-int abs(unsigned int v)
+int abs(unsigned value)
 {
-	int const mask = v >> (sizeof(int) * CHAR_BIT - 1);
+	const int mask = value >> (sizeof(int) * CHAR_BIT - 1);
 	
-	return (v + mask) ^ mask;
+	return (value + mask) ^ mask;
 }
 
 int main(void)
