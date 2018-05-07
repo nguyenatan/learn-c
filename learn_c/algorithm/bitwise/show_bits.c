@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <limits.h>
     
 void show_bit(unsigned int x)
 {	
-	int i = sizeof(int) * 8 - 1;
+	int i = sizeof(int) * CHAR_BIT - 1;
 	for(; i >= 0; --i) {
 		
 		if (i != 31 && !((i + 1) % 4))
