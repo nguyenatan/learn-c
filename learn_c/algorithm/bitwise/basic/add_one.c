@@ -1,8 +1,8 @@
 #include <stdio.h>
     
-unsigned add_one(unsigned v)
+unsigned add_one(unsigned value)
 {
-	return -(~v);
+	return -(~value);
 }
 
 int main(void) 
