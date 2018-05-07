@@ -1,6 +1,6 @@
 #include <stdio.h>
     
-unsigned int add_one(unsigned int v)
+unsigned add_one(unsigned v)
 {
 	return -(~v);
 }
