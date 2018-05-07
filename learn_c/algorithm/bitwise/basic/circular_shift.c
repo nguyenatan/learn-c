@@ -2,7 +2,7 @@
 
 #define CHAR_BIT 8
 
-unsigned left_rotate(unsigned value, unsigned count)
+uint32_t left_rotate(unsigned value, unsigned count)
 {
 	const unsigned mask = sizeof(int) * CHAR_BIT - 1;
 	count &= mask;
