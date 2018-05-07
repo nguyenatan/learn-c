@@ -2,9 +2,9 @@
 
 #define bool int
 
-bool is_odd(unsigned int v)
+bool is_odd(unsigned value)
 {
-	return v & 1;
+	return value & 1;
 }
 
 int main(void) 
