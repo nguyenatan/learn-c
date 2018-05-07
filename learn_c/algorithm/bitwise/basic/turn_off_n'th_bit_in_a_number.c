@@ -2,7 +2,7 @@
 
 unsigned int turn_off_nth_bit(unsigned int v, unsigned int n)
 {
-	return v & ~(1 << (n - 1));
+	return v & ~(1u << (n - 1));
 }
 
 int main(void) 
