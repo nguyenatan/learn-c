@@ -16,7 +16,7 @@ void show_bit(unsigned int v)
     	printf("\n");
 }
 
-int main() 
+int main(void) 
 {
 	printf("47 in binary ");
 	show_bit(47);
