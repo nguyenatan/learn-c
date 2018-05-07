@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <limits.h>
+
+#define CHAR_BIT 8
     
 void show_bit(unsigned int x)
 {	
