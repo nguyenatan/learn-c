@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <limits.h>
 
+#define CHAR_BIT 8
 #define bool int
 
 bool is_opposite_sign(unsigned int x, unsigned int y)
