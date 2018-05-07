@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-#define CHAR_BIT 8
 #define bool int
+#define CHAR_BIT 8
 
-bool is_opposite_sign(unsigned int x, unsigned int y)
+bool is_opposite_sign(unsigned x, unsigned y)
 {	
 	return (x ^ y) >> (sizeof(int) * CHAR_BIT - 1);
 }
