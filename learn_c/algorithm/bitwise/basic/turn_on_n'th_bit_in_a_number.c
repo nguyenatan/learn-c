@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-unsigned int turn_on_nth_bit(unsigned int v, unsigned int n)
+unsigned turn_on_nth_bit(unsigned value, unsigned n)
 {
-	return v | (1u << (n - 1));
+	return value | (1u << (n - 1));
 }
 
 int main(void) 
