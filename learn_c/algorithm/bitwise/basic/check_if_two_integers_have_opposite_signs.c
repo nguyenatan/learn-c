@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <limits.h>
 
 #define bool int
 
 bool is_opposite_sign(unsigned int x, unsigned int y)
 {	
-	return (x ^ y) >> 31;
+	return (x ^ y) >> (sizeof(int) * CHAR_BIT - 1);
 }
 
 
