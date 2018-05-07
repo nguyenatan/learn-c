@@ -2,7 +2,7 @@
 
 #define CHAR_BIT 8
     
-void show_bit(unsigned int x)
+void show_bit(unsigned int v)
 {	
 	int i = sizeof(int) * CHAR_BIT - 1;
 	for(; i >= 0; --i) {
@@ -10,7 +10,7 @@ void show_bit(unsigned int x)
 		if (i != 31 && !((i + 1) % 4))
 			putchar(' ');
 		
-		(x & (1u << i)) ? putchar('1') : putchar('0');
+		(v & (1u << i)) ? putchar('1') : putchar('0');
 	}
 	
     	printf("\n");
