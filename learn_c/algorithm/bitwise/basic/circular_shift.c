@@ -2,18 +2,20 @@
 
 #define CHAR_BIT 8
 
-unsigned int left_rotate(unsigned int v, unsigned int d)
+unsigned left_rotate(unsigned value, unsigned count)
 {
-	unsigned int const INT_BIT = sizeof(int) * CHAR_BIT;
+	const unsigned mask = sizeof(int) * CHAR_BIT - 1;
+	count &= mask;
 	
-	return (v << d) | (v >> (INT_BIT - d));
+	return (value << count) | (value >> (-count & mask));
 }
 
-unsigned int right_rotate(unsigned int v, unsigned int d)
+unsigned right_rotate(unsigned value, unsigned count)
 {
-	unsigned int const INT_BIT = sizeof(int) * CHAR_BIT;
+	const unsigned mask = sizeof(int) * CHAR_BIT - 1;
+	count &= mask;
 	
-	return (v >> d) | (v << (INT_BIT - d));
+	return (value >> count) | (value << (-count & mask));
 }
 
 int main(void)
