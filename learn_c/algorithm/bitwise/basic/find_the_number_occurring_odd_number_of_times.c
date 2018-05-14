@@ -2,7 +2,7 @@
 
 /*
  * x ^ 0 = x
- * x ^ y = 0
+ * x ^ x = 0
  * x ^ x ^ y = y
  */
 int get_odd_occurrence(int *array, unsigned size)
