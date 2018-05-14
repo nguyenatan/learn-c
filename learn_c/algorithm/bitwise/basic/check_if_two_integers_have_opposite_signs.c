@@ -11,7 +11,7 @@ bool is_opposite_sign(unsigned x, unsigned y)
 
 int main(void)
 {
-	printf("%d\n", is_opposite_sign(-4, 7));
+	printf("%d\n", is_opposite_sign(-4, 7)); // true
 	
 	return 0;
 }
