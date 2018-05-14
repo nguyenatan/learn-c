@@ -2,11 +2,12 @@
     
 void swap(unsigned *x, unsigned *y)
 {
-	if (*x != *y) {
-		*x ^= *y;
-		*y ^= *x;
-		*x ^= *y;
-	}
+	if (x == y)
+		return;
+	
+	*x ^= *y;
+	*y ^= *x;
+	*x ^= *y;
 }
 
 int main(void) 
