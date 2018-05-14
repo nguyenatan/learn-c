@@ -16,9 +16,19 @@ unsigned count_set_bit(unsigned value)
 	       bits_set_table_256[(value >> 24) & 0xFF];
 }
 
+/*
+ * flipped_count - Count number of bits to be flipped to convert A to B
+ */
+unsigned flipped_count(unsigned x, unsigned y)
+{
+	return count_set_bit(x ^ y);
+}
+
 int main(void)
 {
 	printf("%d\n", count_set_bit(47)); // 5
+	
+	printf("%d\n", flipped_count(4, 7)); // 2
 	
 	return 0;
 }
