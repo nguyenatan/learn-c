@@ -16,7 +16,7 @@ unsigned compute_xor(const unsigned n)
 
 int main(void)
 {
-	printf("%d\n", compute_xor(47)); // 0
+	printf("%d\n", compute_xor(6)); // 7
 	
 	return 0;
 }
