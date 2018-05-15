@@ -2,7 +2,7 @@
     
 unsigned add_one(unsigned value)
 {
-	return -(~value);
+	return -~value;
 }
 
 int main(void) 
