@@ -14,7 +14,6 @@ string to_two_complement(string str)
 		return '1' + str;
 	
 	for (--i; i >= 0; --i) {
-		
 		if (str[i] == '1')
 			str[i] = '0';
 		else
