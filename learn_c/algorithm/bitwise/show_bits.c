@@ -1,24 +1,23 @@
 #include <stdio.h>
 
 #define CHAR_BIT 8
-    
+
 void show_bit(unsigned value)
-{	
+{
 	int i = sizeof(int) * CHAR_BIT - 1;
-	for(; i >= 0; --i) {
+	for (; i >= 0; --i) {
 		
-		if (i != 31 && !((i + 1) % 4))
+		if (i != 31 && !((i + 1) & 3))
 			putchar(' ');
 		
 		(value & (1u << i)) ? putchar('1') : putchar('0');
 	}
 	
-    	printf("\n");
+	printf("\n");
 }
 
-int main(void) 
+int main(void)
 {
-	printf("47 in binary ");
 	show_bit(47);
 	
 	return 0;
