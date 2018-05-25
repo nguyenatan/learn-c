@@ -7,7 +7,7 @@ void show_bit(unsigned value)
 	int i = sizeof(int) * CHAR_BIT - 1;
 	for (; i >= 0; --i) {
 		
-		if (i != 31 && !((i + 1) & 3))
+		if ( i != 31 && !((i + 1) & 3) )
 			putchar(' ');
 		
 		(value & (1u << i)) ? putchar('1') : putchar('0');
