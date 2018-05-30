@@ -14,7 +14,7 @@ bool is_power_of_four(unsigned value)
 		}
 	}
 	
-	return !(count % 2) ? 1 : 0;
+	return !(count & 1) ? 1 : 0;
 }
 
 int main(void)
