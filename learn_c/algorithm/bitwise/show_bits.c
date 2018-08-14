@@ -2,7 +2,7 @@
 
 #define CHAR_BIT 8
 
-void show_bit(unsigned value)
+void show_bits(unsigned value)
 {
 	int i = sizeof(int) * CHAR_BIT - 1;
 	for (; i >= 0; --i) {
@@ -18,7 +18,7 @@ void show_bit(unsigned value)
 
 int main(void)
 {
-	show_bit(47);
+	show_bits(47);
 	
 	return 0;
 }
