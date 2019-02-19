@@ -10,6 +10,7 @@ size_t strlen(const char *s)
 int main(void)
 {
     char *str = "Nguyen A Tan";
+    
     printf("%d\n", strlen(str)); // 12
 
     return 0;
