@@ -125,10 +125,8 @@ void sll_delete(struct sll_node **head, int key)
 	struct sll_node *entry = *head;
 	
 	while (entry) {
-		if (entry->data == key) {
+		if (entry->data == key)
 			*head = entry->next;
-			free(head);
-		}
 		
 		head = &(*head)->next;
 		entry = entry->next;
